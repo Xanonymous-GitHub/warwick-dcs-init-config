@@ -16,7 +16,7 @@ update_repo() {
 # Function to verify the latest commit signature
 verify_commit_signature() {
     local repo_path="$HOME/initial-scripts"
-    git -C "$repo_path" log -1 --pretty=format:"%G?" | grep -q "G"
+    git -C "$repo_path" log -1 --show-signature --pretty=format:"%G?" | grep -q "G"
 }
 
 # Function to source the configuration script
