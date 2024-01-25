@@ -1,0 +1,1 @@
+USE_FISH_SHELL=true
